@@ -40,7 +40,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // for accessing document.use
-app.use('/api-docs', swagger.serve, swagger.setup(apiDocs));
+// app.use('/api-docs', swagger.serve, swagger.setup(apiDocs));
 
 
 // Application logger

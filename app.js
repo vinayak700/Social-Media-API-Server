@@ -7,7 +7,7 @@ import cookieParser from 'cookie-parser';
 import swagger from 'swagger-ui-express';
 
 // File Imports
-import apiDocs from './swagger.json' assert{type: 'json'};
+// import apiDocs from './swagger.json' assert{type: 'json'};
 import errorHandler from './src/middlewares/errorHandler.js';
 import authRouter from './src/routes/auth_routes.js';
 import auth from './src/middlewares/auth.js';

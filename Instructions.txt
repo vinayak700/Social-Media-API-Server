@@ -1,0 +1,169 @@
+Social Media Backend REST-API
+Goal
+Develop a robust social media backend REST-API that empowers users to post, comment, like, send friend requests, and reset their passwords using OTP for enhanced security.
+
+
+Acceptance criteria:
+RESTful Architecture
+
+- Develop a RESTful API using Node.js, ExpressJS, and MongoDB for efficient data handling and routing control.
+
+Code Modularity
+
+- Organize code using ES6 Modules for maintainability and modularity.
+
+User Authentication
+
+- Implement a user authentication system with essential features like signup, login, and logout. Moreover, you have the opportunity to earn extra marks for implementing an advanced feature: the ability to log out from all devices. To achieve this, consider storing each login token in an additional array field within the user's document.
+- Registration should include user details such as name, email, password, and gender. Additional fields can be included as needed.
+
+Post Management
+
+- Implement CRUD operations for posts, including fields like caption and an image URL related to the post.
+- Ensure that each post references the user who created it.
+- Post can be updated or deleted only by the post owner.
+
+Comment System
+
+- Develop a comment system that allows users to add, update, and delete comments on posts.
+- Comments can be updated or deleted only by the post owner or the commenter.
+    
+Like Functionality
+
+- Create a like system for posts, including logic with MongoDB and population of documents.
+- Display counts of likes and comments on posts.
+- Populate user information (id, name, and email) for likes, comments, and posts.
+
+Friendship Features
+
+- Implement a friendship system with features like getting user friends, managing pending friend requests, toggling friendships, and accepting/rejecting friend requests.
+
+User Profile Updates
+
+- Enable users to update their profiles, including fields like name, gender, or avatar.
+- Implement avatar uploads for user profiles.
+
+OTP-Based Password Reset (Additional Task)
+
+- OTP-based password reset feature. Create controllers, models, and repositories for OTP management.
+- You can use the Nodemailer library for email communication.
+
+
+Tasks
+
+Project Setup
+
+- Set up an Express.js application and configure related settings.
+Dependency Installation
+- Install the necessary project dependencies based on the required functionalities.
+
+User Authentication
+
+- Implement user registration and login routes.
+- Develop user logout routes.
+
+User Profile
+- Create routes for getting user details and updating user profiles.
+- Implement avatar uploads.
+
+Post Management
+- Set up routes and controllers for CRUD operations on posts.
+- Handle image uploads for post images.
+
+Comment System
+- Develop routes and controllers for managing comments on posts.
+
+Like Functionality
+- Create routes and logic for liking and unliking posts and comments.
+
+Friendship Features
+- Implement routes and controllers for user friendships, including getting friends, and accepting/rejecting requests.
+
+OTP-Based Password Reset
+- Set up routes and controllers for sending OTPs, verifying OTPs, and resetting passwords.
+
+Error Handling and Logging
+- Implement error handling middleware and request logging.-
+
+Testing and Documentation
+- Thoroughly test the API to ensure it meets acceptance criteria.
+- Document the application's functionalities, dependencies, and code organization for clarity.
+
+
+API Structure
+
+The API structure for the "Social-Media" project can be organized as follows:
+
+Authentication Routes
+
+/api/users/signup: Register a new user account.
+/api/users/signin: Log in as a user.
+/api/users/logout: Log out the currently logged-in user.
+/api/users/logout-all-devices: Log out the user from all devices.
+
+User Profile Routes
+
+/api/users/get-details/:userId: Retrieve user information, ensuring sensitive data like passwords is not exposed.
+/api/users/get-all-details: Retrieve information for all users, avoiding display of sensitive credentials like passwords.
+/api/users/update-details/:userId: Update user details while ensuring that sensitive data like passwords remains secure and undisclosed.
+
+Post Routes
+
+/api/posts/all: Retrieve all posts from various users to compile a news feed.
+/api/posts/:postId: Retrieve a specific post by ID.
+/api/posts/: Retrieve all posts for a specific user to display on their profile page.
+/api/posts/: Create a new post.
+/api/posts/:postId: Delete a specific post.
+/api/posts/:postId: Update a specific post.
+
+Note that for the same routes, you can change the HTTP methods (GET, POST, PUT, DELETE). 
+For example:
+Use DELETE("/api/posts/:postId") to delete a specific post.
+Use PUT("/api/posts/:postId") to update a specific post.
+
+In both cases, the route remains the same; only the HTTP method is changed.
+
+
+Comment Routes
+
+/api/comments/:postId: Get comments for a specific post.
+/api/comments/:postId: Add a comment to a specific post.
+/api/comments/:commentId: Delete a specific comment.
+/api/comments/:commentId: Update a specific comment.
+
+Note: For the same routes, change the HTTP methods (GET, POST, PUT, DELETE).
+
+Like Routes
+
+/api/likes/:id: Get likes for a specific post or comment.
+/api/likes/toggle/:id: Toggle like on a post or comment.
+
+Friendship Routes
+
+/api/friends/get-friends/:userId: Get a user's friends.
+/api/friends/get-pending-requests: Get pending friend requests.
+/api/friends/toggle-friendship/:friendId: Toggle friendship with another user.
+/api/friends/response-to-request/:friendId: Accept or reject a friend request.
+
+OTP Routes
+
+/api/otp/send: Send an OTP for password reset.
+/api/otp/verify: Verify an OTP.
+/api/otp/reset-password: Reset the user's password.
+
+
+Link to collection routes:
+
+Link
+
+This postman collection consists of folders with different routes to implement the project. 
+
+Steps to be followed: 
+
+Click on the URL provided for the collection.
+ 
+Ensure you are logged in using your postman credentials
+Fork this collection and proceed further to test your application.
+ 
+
+Note: Don't forget to change the parameters (ObjectId, postId, commentId, etc.) wherever necessary.

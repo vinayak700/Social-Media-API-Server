@@ -1,0 +1,164 @@
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"caption\":\"Let's dive in MERN \"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"caption\":\"Let's dive in MERN \"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=%27draft%27-{}","service":"request-logging"}
+{"level":"info","message":"/?save=%27draft%27-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=%27draft%27-{}","service":"request-logging"}
+{"level":"info","message":"/?save=%27draft%27-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/?save=draft-{}","service":"request-logging"}
+{"level":"info","message":"/?save=draft-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/toggle/6556f84b7877f4e5fe00c309-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/toggle/6556f84b7877f4e5fe00c309-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/toggle/6556f84b7877f4e5fe00c309-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/toggle/6556f84b7877f4e5fe00c309-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6556f84b7877f4e5fe00c309-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6556f84b7877f4e5fe00c309-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6556f84b7877f4e5fe00c309-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/toggle/6556ff1738c327926b4076d4-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6556ff1738c327926b4076d4-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6556ff1738c327926b4076d4-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6556ffa72ff8775da80a3926-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6556ffa72ff8775da80a3926-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/toggle/6556ffdbaaa84126d39d0173-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6556ffdbaaa84126d39d0173-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/655700a753c123355af3ca95-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/655700a753c123355af3ca95-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/655700a753c123355af3ca95-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/655700de179bf6de714bbbbf-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6557019fd62f7b3206ab54e9-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/65570292d99275b31dc0affd-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/archive/6557048340e8fb9f48e680cf-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/unarchive/6557049240e8fb9f48e680d7-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/toggle/655704e040e8fb9f48e680de-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/toggle/655704e040e8fb9f48e680de-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?caption=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=dive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=dive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=dive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=dive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=dive-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ve-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ve%20in-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ve%20ind-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ve%20indasd-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=vs-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=ivs-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/filter?text=iv-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/logout-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/logout-all-devices-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/logout-all-devices-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/653bb90b1e3b6cf7d9bdd6ab-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/653bb90b1e3b6cf7d9bdd6ab-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/653bb90b1e3b6cf7d9bdd6ab-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/653bb90b1e3b6cf7d9bdd6ab-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/6566ca517b110fcc873f2f23-{\"name\":\"Gaurav Singh\",\"email\":\"gaurav@gmail.com\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/6566ca517b110fcc873f2f23-{\"name\":\"Gaurav Singh\",\"email\":\"gaurav@gmail.com\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/6566ca517b110fcc873f2f23-{\"name\":\"vinayak Singh\",\"email\":\"gaurav@gmail.com\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/-{}","service":"request-logging"}
+{"level":"info","message":"/-{\"imageUrl\":\"\",\"caption\":\"Let's dive in MERN with draft\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/posts/6566d1d81097941aa7a36800-{}","service":"request-logging"}
+{"level":"info","message":"/6566d1d81097941aa7a36800-{\"caption\":\"Project testing\"}","service":"request-logging"}
+{"level":"info","message":"/api/posts/all-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/logout-all-devices-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/logout-all-devices-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/6566ca517b110fcc873f2f23-{\"email\":\"vinayak08st@gmail.com\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/6566ca517b110fcc873f2f23-{\"email\":\"vinayakt890@gmail.com\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/delete/6566ca517b110fcc873f2f23-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/delete/6566ca517b110fcc873f2f23-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/logout-all-devices-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/logout-all-devices-{}","service":"request-logging"}

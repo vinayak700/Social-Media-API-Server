@@ -594,7 +594,7 @@
         ],
         "summary": "Delete a  post",
         "description": "Deleting a single post with an Id",
-        "s": [
+        "parameters": [
           {
             "name": "postId",
             "in": "path",

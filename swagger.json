@@ -3,11 +3,11 @@
   "info": {
     "title": "Social Media API's",
     "version": "1.0.0",
-    "description": "API's for Social Media Application"
+    "description": "API's for Social Media Application Server"
   },
   "servers": [
     {
-      "url": "http://localhost:8000"
+      "url": "https://pear-important-blackbuck.cyclic.app"
     }
   ],
   "components": {

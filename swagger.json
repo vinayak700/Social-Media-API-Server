@@ -1,0 +1,1123 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Social Media API's",
+    "version": "1.0.0",
+    "description": "API's for Social Media Application"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8000"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "JWT": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization"
+      }
+    }
+  },
+  "paths": {
+    "/api/users/signup": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Register User",
+        "description": "Registering a User",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  },
+                  "email": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  },
+                  "password": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  },
+                  "gender": {
+                    "type": "string"
+                  },
+                  "avatar": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created a new User"
+          },
+          "400": {
+            "description": "Failed to register"
+          }
+        }
+      }
+    },
+    "/api/users/signin": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Logging User",
+        "description": "Sigining in a User",
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  },
+                  "password": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ok"
+          },
+          "400": {
+            "description": "Incorrect Credentials"
+          },
+          "404": {
+            "description": "User Not Found"
+          }
+        }
+      }
+    },
+    "/api/users/logout": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Logout",
+        "description": "Logging out a User",
+        "responses": {
+          "201": {
+            "description": "ok"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/users/logout-all-devices": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Logout All",
+        "description": "Logging out a User from all devices",
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/users/get-details/{userId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Retrieve User",
+        "description": "Fetching details of User",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/users/get-all-details": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Retriving All Users",
+        "description": "Fetching details of all Users",
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/users/update-details/{userId}": {
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Update an User",
+        "description": "Updating a Specific User Content",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "gender": {
+                    "type": "string"
+                  },
+                  "avatar": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "ok"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/users/delete/{userId}": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Delete User",
+        "description": "Deleting a specific User",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "ok"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/posts/": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Retrieve User Posts",
+        "description": "Retrieving all posts of a specific user",
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved all Posts of an User"
+          },
+          "404": {
+            "description": "No Posts Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Create a Post",
+        "description": "Creating a new Post for an User",
+        "parameters": [
+          {
+            "name": "save",
+            "in": "query",
+            "description": "Query for creating post as draft",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "caption": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  },
+                  "imageUrl": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Post has been created."
+          },
+          "404": {
+            "description": "Failed to create a post."
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/posts/all": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Retrieve All Posts",
+        "description": "Retrieving Posts of all Users",
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fetched all Posts"
+          },
+          "400": {
+            "description": "No Posts Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/posts/filter": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Filter Posts",
+        "description": "Retrieving filtered Posts",
+        "parameters": [
+          {
+            "name": "text",
+            "in": "query",
+            "description": "Filter for the resource",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved filtered Posts"
+          },
+          "404": {
+            "description": "No Posts Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/posts/toggle/{postId}": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Toggle Bookmark on a post",
+        "description": "Toggling the Status of a bookmark of a post",
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "postId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "No Post Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/posts/{postId}": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Retrieve a single post",
+        "description": "Retrieving a specific post with an Id",
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "Id for the ",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retrieved a single Post"
+          },
+          "404": {
+            "description": "No Post Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Update a post",
+        "description": "Updating a single post with an Id",
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "postId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "caption": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  },
+                  "imageUrl": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Failed to update the post"
+          },
+          "404": {
+            "description": "No Post Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Delete a  post",
+        "description": "Deleting a single post with an Id",
+        "s": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "postId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Deleted a Post."
+          },
+          "404": {
+            "description": "No Post Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/posts/archive/{postId}": {
+      "patch": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Archive a post",
+        "description": "Archiving a post with an Id",
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "postId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully Archived the Post"
+          },
+          "400": {
+            "description": "Failed to archive the post"
+          },
+          "404": {
+            "description": "No Post Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/posts/unarchive/{postId}": {
+      "patch": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "UnArchive a post",
+        "description": "UnArchiving a post with an Id",
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "postId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully UnArchived the Post"
+          },
+          "400": {
+            "description": "Failed to unarchive the post"
+          },
+          "404": {
+            "description": "No Post Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/comments/{postId}": {
+      "get": {
+        "tags": [
+          "Comments"
+        ],
+        "summary": "Retrieve Post Comments",
+        "description": "Retrieving all comments for the post",
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "postId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "No Comments found on the Post."
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Comments"
+        ],
+        "summary": "Create a comment",
+        "description": "Creating a comment on a specific post",
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "postId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "content": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Failed to create the comment"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/comments/{commentId}": {
+      "put": {
+        "tags": [
+          "Comments"
+        ],
+        "summary": "Update a comment",
+        "description": "Updating a user comment from the post.",
+        "parameters": [
+          {
+            "name": "commentId",
+            "in": "path",
+            "description": "commentId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "content": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Failed to update the comment"
+          },
+          "404": {
+            "description": "No Comment Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Comments"
+        ],
+        "summary": "Delete a comment",
+        "description": "Deleting a user comment from the post.",
+        "parameters": [
+          {
+            "name": "commentId",
+            "in": "path",
+            "description": "commentId for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Failed to delete the comment. "
+          },
+          "404": {
+            "description": "No Comment Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/likes/{id}": {
+      "get": {
+        "tags": [
+          "Likes"
+        ],
+        "summary": "Retrieve Post/Comment likes",
+        "description": "Retrieving all likes based on the type.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Type of a like.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "No Likes Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/likes/toggle/{id}": {
+      "post": {
+        "tags": [
+          "Likes"
+        ],
+        "summary": "Toggle a like",
+        "description": "Toggling a like registered based on the type.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id for the resource",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Type of a like to be Registered.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "No Like Found"
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/otp/send": {
+      "post": {
+        "tags": [
+          "Otp"
+        ],
+        "summary": "Send an OTP",
+        "description": "Sending an OTP message to User's Email Address.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Failed to send an OTP. "
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/otp/verify": {
+      "post": {
+        "tags": [
+          "Otp"
+        ],
+        "summary": "Verify an OTP",
+        "description": "Checking an OTP message for verification.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  },
+                  "otp": {
+                    "type": "number",
+                    "required": [
+                      "true"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Failed to verify. "
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    },
+    "/api/otp/reset-password": {
+      "post": {
+        "tags": [
+          "Otp"
+        ],
+        "summary": "Reset a Password",
+        "description": "Resetting a password for a specific User.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  },
+                  "confirmPassword": {
+                    "type": "string",
+                    "required": [
+                      "true"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWT": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Failed to reset Password. "
+          },
+          "500": {
+            "description": "Something went wrong"
+          }
+        }
+      }
+    }
+  }
+}
